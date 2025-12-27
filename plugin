@@ -4,7 +4,7 @@ if not isfolder(pluginsFolder) then
 end
 
 local success, code = pcall(function()
-    return game:HttpGet("https://raw.githubusercontent.com/aux0on/lua/refs/heads/main/A6PGs.lua")
+    return game:HttpGet("https://raw.githubusercontent.com/aux0on/afpcode/refs/heads/main/heywooo")
 end)
 
 if success then
