@@ -1,0 +1,14 @@
+local pluginsFolder = "Ixry Shizuka/plugins"
+if not isfolder(pluginsFolder) then
+    makefolder(pluginsFolder)
+end
+
+local success, code = pcall(function()
+    return game:HttpGet("https://raw.githubusercontent.com/aux0on/lua/refs/heads/main/A6PGs.lua")
+end)
+
+if success then
+    writefile(pluginsFolder .. "/ATAOs.lua", code)
+else
+    warn("Failed to fetch code from URL: " .. tostring(code))
+end
